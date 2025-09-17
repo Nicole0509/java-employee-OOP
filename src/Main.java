@@ -5,6 +5,9 @@ public class Main {
 
         System.out.println("Welcome To The Employee System!");
 
+        Manager manager = new Manager("Tom", 40000, 2000);
 
+        manager.displayInfo();
+        System.out.println("Total salary:" +manager.calculateSalary());
     }
 }
