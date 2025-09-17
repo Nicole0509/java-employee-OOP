@@ -1,16 +1,21 @@
 public class Programmer extends Employee{
 
-    Programmer(){
-        super("Programmer");
+    int workingHours;
+    double ratePerHour;
+
+    Programmer(String name,  int workingHours, double ratePerHour) {
+        super(name);
+        this.workingHours = workingHours;
+        this.ratePerHour = ratePerHour;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("Programer333");
+        System.out.println(name + " is a programmer working " + workingHours + " hours per day and at an hourly of " + ratePerHour +"$  .");
     }
 
     @Override
     public double calculateSalary() {
-        return 0;
+        return (double)workingHours * ratePerHour;
     }
 }
