@@ -7,7 +7,15 @@ public class Main {
 
         Manager manager = new Manager("Tom", 40000, 2000);
 
+        Programmer programmer = new Programmer("Liza", 3, 400);
+
         manager.displayInfo();
-        System.out.println("Total salary:" +manager.calculateSalary());
+        System.out.println("Total salary:" + manager.calculateSalary());
+
+        System.out.println();
+
+        programmer.displayInfo();
+        System.out.println("Total salary:" + programmer.calculateSalary());
+
     }
 }
