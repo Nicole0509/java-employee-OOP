@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Manager extends Employee{
 
-public class Manager {
+    @Override
+    public double calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Manager");
+    }
 }
